@@ -1,0 +1,49 @@
+.internship {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.internship h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.internship h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #34495e;
+}
+
+.internship p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.internship ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-top: 1rem;
+}
+
+.internship li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.internship a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.internship a:hover {
+  text-decoration: underline;
+}

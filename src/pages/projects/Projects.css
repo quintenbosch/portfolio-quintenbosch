@@ -1,0 +1,142 @@
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #0073e6;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005bb5;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.project-card,
+.certificate-card {
+  background-color: #f9f9f9;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover,
+.certificate-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-title,
+.certificate-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.project-card p,
+.certificate-card p {
+  line-height: 1.6;
+}
+
+.course-link {
+  color: #0073e6;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.course-link:hover {
+  color: #005bb5;
+}
+
+.certificate-download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 115, 230, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.certificate-download-button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.slideshow-image {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.slideshow-image:hover {
+  transform: scale(1.02);
+}
+
+.slideshow-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slideshow-button:hover {
+  background-color: #f0f0f0;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
