@@ -60,7 +60,8 @@ export default function About() {
             <p>
               Hi! I'm <strong>Quinten Bosch</strong>, a passionate application
               developer who values user-centered design and clean, maintainable
-              code. I enjoy a challenge and can work independently or in group.
+              code. I enjoy a challenge and can work independently or in a
+              group.
             </p>
             <p>
               Outside of coding, I love playing football, darts, and having a
@@ -77,10 +78,10 @@ export default function About() {
               technically and professionally.
             </p>
             <p>
-              I love to learn new things or expand my knowledge in areas I'm
+              I love learning new things and expanding my knowledge in areas I'm
               already familiar with. I enjoy working with various technologies
               and frameworks, always striving to improve my skills. Programming
-              is working with logic and structure, which I think is fun.
+              involves working with logic and structure, which I find fun.
             </p>
           </section>
 
@@ -102,7 +103,7 @@ export default function About() {
             </ul>
             <p>
               You can find more information about my skills and experience in my
-              CV down below.
+              CV below.
             </p>
           </section>
 

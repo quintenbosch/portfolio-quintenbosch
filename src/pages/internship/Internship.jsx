@@ -3,19 +3,19 @@ import "./Internship.css";
 export default function Internship() {
   return (
     <div className="internship">
-      <h1>Internship at A.S. Adventure & Natuurpunt – TrailFit App</h1>
+      <h1>Internship at A.S. Adventure & Natuurpunt — TrailFit App</h1>
 
       <div className="internship-section">
         <p>
           During the second semester of the 2024–2025 academic year, I completed
           my internship at A.S. Adventure in collaboration with Natuurpunt. The
           main focus of this internship was the development of a mobile
-          application called <strong>TrailFit</strong>. This app was designed to
-          recommend appropriate walking clothing to users based on their
-          selected hiking route and the weather forecast for a given date.
-          TrailFit promotes outdoor activity and aims to enhance the user’s
-          nature experience, while also supporting A.S. Adventure’s commercial
-          goals and Natuurpunt’s mission to encourage nature exploration.
+          application called <strong>TrailFit</strong>, designed to recommend
+          appropriate walking clothing to users based on their selected hiking
+          route and the weather forecast for a given date. TrailFit promotes
+          outdoor activity and aims to enhance the user’s nature experience,
+          while also supporting A.S. Adventure’s commercial goals and
+          Natuurpunt’s mission to encourage nature exploration.
         </p>
       </div>
 
@@ -50,11 +50,12 @@ export default function Internship() {
         <p>
           The realization phase involved building the frontend using reusable
           components, managing data via React Query and AsyncStorage, and
-          setting up internationalization using i18Next. I created APIs to serve
-          walking route data and interact with a weather API to generate
-          personalized recommendations. The backend followed a clear structure
-          using repository-service-controller patterns and integrated tools like
-          MapStruct and Flyway for maintainable code and database versioning.
+          setting up internationalization using i18Next. I created APIs to
+          serve walking route data and to interact with a weather API for
+          generating personalized recommendations. The backend followed a clear
+          structure using repository-service-controller patterns and integrated
+          tools like MapStruct and Flyway for maintainable code and database
+          versioning.
         </p>
 
         <p>
@@ -62,7 +63,7 @@ export default function Internship() {
           data inconsistencies in public trail sources, and the integration of
           mobile and backend technologies. By the end of the internship, I had
           delivered a fully functional and polished prototype, presented it to
-          important persons in the company, and documented the entire process
+          key stakeholders in the company, and documented the entire process
           thoroughly. Although some extra features like dynamic maps and
           real-time notifications were not fully implemented due to time
           constraints, the core product met all outlined goals.
