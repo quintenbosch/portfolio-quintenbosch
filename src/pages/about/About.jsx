@@ -101,7 +101,8 @@ export default function About() {
               <li>SQL</li>
             </ul>
             <p>
-              You can find more information about my skills and experience in my CV down below.
+              You can find more information about my skills and experience in my
+              CV down below.
             </p>
           </section>
 

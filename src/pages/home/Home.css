@@ -22,14 +22,14 @@
 
 .welcome-title {
   font-size: 2.75rem;
-  color: #1e3a8a; /* Tailwind blue-900 */
+  color: #1e3a8a;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
 .welcome-subtitle {
   font-size: 1.25rem;
-  color: #475569; /* Tailwind slate-600 */
+  color: #475569;
 }
 
 .intro-section {
@@ -37,7 +37,7 @@
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0; /* Tailwind gray-200 */
+  border: 1px solid #e2e8f0;
   transition: transform 0.3s ease;
 }
 
@@ -47,7 +47,7 @@
 
 .intro-text {
   font-size: 1.05rem;
-  color: #334155; /* Tailwind slate-700 */
+  color: #334155;
   line-height: 1.75;
   margin-bottom: 1.25rem;
 }

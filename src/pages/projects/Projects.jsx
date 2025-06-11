@@ -4,7 +4,6 @@ import "./Projects.css";
 const signalGuardMedia = [
   { type: "image", src: "/SignalGuard/Homescreen.png" },
   { type: "image", src: "/SignalGuard/Map.png" },
-  // Removed video from slideshow
   { type: "image", src: "/SignalGuard/Kastplan.png" },
 ];
 

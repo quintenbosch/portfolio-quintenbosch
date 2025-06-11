@@ -18,7 +18,7 @@
   font-size: 1.75rem;
   margin-bottom: 0.75rem;
   color: #0073e6;
-  border-bottom: none; /* remove old border */
+  border-bottom: none;
   padding-bottom: 0;
 }
 
@@ -56,9 +56,9 @@
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: transparent; /* transparent background */
-  color: #0077cc;                /* link blue color */
-  border: 2px solid #0077cc;    /* border like link */
+  background-color: transparent;
+  color: #0077cc;
+  border: 2px solid #0077cc;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -83,7 +83,6 @@
   text-decoration: underline;
 }
 
-/* Slideshow styling (adapted to keep the same style) */
 .slideshow {
   display: flex;
   align-items: center;
