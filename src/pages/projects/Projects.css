@@ -52,6 +52,26 @@
   line-height: 1.6;
 }
 
+.certificate-download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: transparent; /* transparent background */
+  color: #0077cc;                /* link blue color */
+  border: 2px solid #0077cc;    /* border like link */
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.certificate-download-button:hover {
+  background-color: #0077cc;
+  color: white;
+  transform: translateY(-2px);
+}
+
 .course-link {
   color: #0077cc;
   text-decoration: none;
