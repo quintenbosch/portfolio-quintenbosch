@@ -1,15 +1,23 @@
 .about-container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: 2rem auto;
   padding: 2rem 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  color: #1e293b; /* Tailwind slate-800 */
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .about-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 2.75rem;
+  margin-bottom: 2.5rem;
+  color: #1e3a8a; /* Tailwind blue-900 */
+  font-weight: 700;
 }
 
 .about-content {
@@ -17,13 +25,17 @@
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
+  background: linear-gradient(to right, #f8fafc, #e0f2fe);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .about-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 220px;
+  flex: 0 0 240px;
 }
 
 .about-photo {
@@ -31,7 +43,7 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease;
 }
 
@@ -39,12 +51,10 @@
   transform: scale(1.05);
 }
 
-/* === Original social buttons styling === */
-
 .social-buttons {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 .social-button {
@@ -53,24 +63,25 @@
   background-color: gray;
   border-radius: 50%;
   padding: 0.5rem;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  text-decoration: none; /* prevent underline */
-  transition: background-color 0.3s;
-  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
+.social-button:hover {
+  transform: translateY(-2px);
+}
 
 .social-button.linkedin:hover {
-  background-color: #005582;
+  background-color: #0077b5;
 }
 
 .social-button.github:hover {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .social-button.facebook:hover {
@@ -83,21 +94,29 @@
 
 .about-text {
   flex: 1 1 0;
-  min-width: 250px;
+  min-width: 260px;
 }
 
 .about-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .about-section h2 {
   font-size: 1.75rem;
   margin-bottom: 0.75rem;
-  color: #0073e6;
+  color: #2563eb; /* Tailwind blue-600 */
 }
 
 .about-section p {
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #334155; /* Tailwind slate-700 */
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #334155;
   margin-bottom: 1rem;
 }
 
@@ -105,18 +124,17 @@
   margin-top: 1.5rem;
 }
 
-/* === Stylish Download My CV button === */
 .cv-download-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #0073e6;
+  background-color: #2563eb;
   color: white;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 115, 230, 0.3);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -125,15 +143,15 @@
 }
 
 .cv-download-button:hover {
-  background-color: #005bb5;
+  background-color: #1e40af;
   transform: translateY(-3px);
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .about-content {
     flex-direction: column;
     align-items: center;
+    padding: 1.5rem;
   }
 
   .about-left {
@@ -142,5 +160,9 @@
 
   .about-text {
     width: 100%;
+  }
+
+  .about-section h2 {
+    text-align: center;
   }
 }

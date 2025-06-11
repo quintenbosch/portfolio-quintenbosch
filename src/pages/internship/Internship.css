@@ -1,49 +1,96 @@
 .internship {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fafafa;
-  color: #333;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  color: #222;
 }
 
 .internship h1 {
-  font-size: 2.4rem;
-  margin-bottom: 1.5rem;
-  color: #2c3e50;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
 }
 
-.internship h2 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
+.internship-section {
+  margin-bottom: 2.5rem;
+}
+
+.internship-section h2 {
+  font-size: 1.75rem;
   margin-bottom: 0.75rem;
-  color: #34495e;
+  color: #0073e6;
 }
 
-.internship p {
+.internship-section p {
   line-height: 1.6;
-  font-size: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.05rem;
 }
 
+/* Updated: Remove bullet points and style document links as cards */
 .internship ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
-  margin-top: 1rem;
+  padding: 0;
+  margin-top: 1.25rem;
+  list-style: none;
 }
 
-.internship li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+.internship ul li {
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 115, 230, 0.08);
+  border-left: 4px solid #0073e6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.internship ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 115, 230, 0.2);
+}
+
+.internship li a {
+  display: block;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.internship li a:hover {
+  text-decoration: underline;
+  color: #005bb5;
 }
 
 .internship a {
-  color: #0077cc;
+  color: #0073e6;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .internship a:hover {
   text-decoration: underline;
+  color: #005bb5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .internship {
+    padding: 2rem 1rem;
+  }
+
+  .internship h1 {
+    font-size: 2rem;
+  }
+
+  .internship-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .internship-section p,
+  .internship li {
+    font-size: 1rem;
+  }
 }

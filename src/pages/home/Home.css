@@ -2,35 +2,52 @@
   padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .welcome-section {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(to right, #e0f2fe, #f8fafc);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .welcome-title {
-  font-size: 2.5rem;
-  color: #2c3e50;
+  font-size: 2.75rem;
+  color: #1e3a8a; /* Tailwind blue-900 */
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .welcome-subtitle {
   font-size: 1.25rem;
-  color: #555;
+  color: #475569; /* Tailwind slate-600 */
 }
 
 .intro-section {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0; /* Tailwind gray-200 */
+  transition: transform 0.3s ease;
+}
+
+.intro-section:hover {
+  transform: translateY(-2px);
 }
 
 .intro-text {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #334155; /* Tailwind slate-700 */
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
 }

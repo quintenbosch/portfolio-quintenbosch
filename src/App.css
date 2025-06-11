@@ -1,31 +1,52 @@
-/* App.css */
-
 .navbar {
   position: sticky;
   top: 0;
   z-index: 50;
   display: flex;
-  justify-content: space-around; /* evenly space items */
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f8fafc, #e0f2fe);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navlink {
-  padding: 0.5rem 1rem;
+  position: relative;
+  padding: 0.5rem 0.75rem;
   text-decoration: none;
   font-weight: 600;
-  color: #2563eb; /* Tailwind blue-600 */
-  transition: color 0.2s;
+  color: #2563eb;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background-color: #1e40af;
+  transition: width 0.3s ease-in-out;
 }
 
 .navlink:hover {
-  color: #1e40af; /* Tailwind blue-800 */
+  color: #1e40af;
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.navlink:hover::after {
+  width: 100%;
 }
 
 .navlink-active {
-  color: #1e40af; /* Tailwind blue-800 */
+  color: #1e40af;
   font-weight: 700;
-  border-bottom: 2px solid #1e40af;
+}
+
+.navlink-active::after {
+  width: 100%;
 }

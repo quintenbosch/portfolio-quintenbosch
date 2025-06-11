@@ -2,38 +2,41 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
   color: #222;
 }
 
 .projects-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #0073e6;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
 }
 
 .section-heading {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #005bb5;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #0073e6;
+  border-bottom: none; /* remove old border */
+  padding-bottom: 0;
 }
 
 .project-card,
 .certificate-card {
-  background-color: #f9f9f9;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.05);
-  transition: transform 0.2s ease;
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 115, 230, 0.08);
+  border-left: 4px solid #0073e6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover,
 .certificate-card:hover {
   transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 115, 230, 0.2);
 }
 
 .project-title,
@@ -50,33 +53,17 @@
 }
 
 .course-link {
-  color: #0073e6;
-  text-decoration: underline;
+  color: #0077cc;
+  text-decoration: none;
   font-weight: 600;
 }
 
 .course-link:hover {
   color: #005bb5;
+  text-decoration: underline;
 }
 
-.certificate-download-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #0073e6;
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 115, 230, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.certificate-download-button:hover {
-  background-color: #005bb5;
-  transform: translateY(-2px);
-}
-
+/* Slideshow styling (adapted to keep the same style) */
 .slideshow {
   display: flex;
   align-items: center;
@@ -116,27 +103,4 @@
 .lightbox {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  cursor: zoom-out;
-}
-
-.lightbox-image {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }
